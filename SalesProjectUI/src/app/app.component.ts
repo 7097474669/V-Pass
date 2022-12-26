@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
+  Date1: Date = new Date();
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+
   title = 'SalesProjectUI';
 }

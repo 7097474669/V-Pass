@@ -6,6 +6,9 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MaterialModule } from './common modules/materials/material.module';
 import { syncfusion } from './common modules/syncfusion/SyncFusion.module';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [
@@ -17,6 +20,8 @@ import { syncfusion } from './common modules/syncfusion/SyncFusion.module';
     BrowserAnimationsModule,
     MaterialModule,
     syncfusion,
+    MatToolbarModule,
+    MatIconModule
   ],
   providers: [],
   bootstrap: [AppComponent]
