@@ -3,5 +3,18 @@
 <a routerLink="wareHouse">WareHouse</a><br>
 <a routerLink="Admin">Admin</a><br>
 
+<div class="banner">
+  <mat-toolbar color="primary">
+    <button mat-icon-button color="accent">
+      <mat-icon>menu</mat-icon>
+    </button> &nbsp;
+    <h1>VPASS</h1>
+    <span class="example-spacer"></span>
+    <span class="date">{{Date1 | date}}</span>&nbsp;&nbsp;
+    <button mat-button>Sign In</button> &nbsp;
+    <button mat-icon-button color="warn" aria-label="Example icon button with a sign up"> Sign Up </button>
+  </mat-toolbar>
+</div>
+
 
 <router-outlet></router-outlet>
