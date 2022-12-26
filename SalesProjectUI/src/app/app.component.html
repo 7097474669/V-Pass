@@ -23,7 +23,15 @@
   </mat-toolbar>
  </div>
  <div id="cont">
-<h2>Welcome to VPASS Website</h2>
+    <h2>Welcome to VPASS Website</h2>
+    <div>
+      <form>
+        <label>
+        Input with dynamic width
+        <input [dynamicWidth]="{ minWidth: 10, maxWidth: 200 }" placeholder="dynamic width"/>
+        </label>
+      </form>
+    </div>
  </div>
 
  <div class="finewp-foot-wrap finewp-container">
