@@ -7,7 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
 
-  Date1: Date = new Date();
   constructor() { }
 
   ngOnInit(): void {

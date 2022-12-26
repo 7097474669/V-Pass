@@ -8,11 +8,13 @@ import { MaterialModule } from './common modules/materials/material.module';
 import { syncfusion } from './common modules/syncfusion/SyncFusion.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
+import { HomeComponent } from './features/home/home.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
