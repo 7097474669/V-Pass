@@ -9,12 +9,14 @@ import { syncfusion } from './common modules/syncfusion/SyncFusion.module';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatIconModule } from '@angular/material/icon';
 import { HomeComponent } from './features/home/home.component';
+import { LoginpageComponent } from './features/loginpage/loginpage.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent
+    HomeComponent,
+    LoginpageComponent
   ],
   imports: [
     BrowserModule,
@@ -29,3 +31,4 @@ import { HomeComponent } from './features/home/home.component';
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+
