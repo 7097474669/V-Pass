@@ -14,7 +14,7 @@ import { FormsModule } from '@angular/forms';
     AppComponent
   ],
   imports: [
-    DynamicInputModule,
+    
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
