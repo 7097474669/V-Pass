@@ -6,11 +6,13 @@
   background-repeat: repeat;
   background-attachment: fixed;
 }
+
 .banner
 {
   color: #FFF;
   background-color: #0077B6;
 }
+
 .example-spacer
 {
   text-decoration: none;
