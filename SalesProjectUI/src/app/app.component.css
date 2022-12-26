@@ -1,7 +1,30 @@
+.background
+{
+  background-color: #c4a9a9;
+    background-position: left top;
+    background-size: auto;
+    background-repeat: repeat;
+    background-attachment: fixed;
+}
 .example-spacer {
   flex: 1 1 auto;
 }
+
 .date
 {
   font-size: small;
 }
+
+
+.finewp-foot-wrap p.finewp-copyright
+{
+  background-color: #000;
+  float: none;
+  margin: 0;
+  color: #fff;
+  text-align: center;
+  padding: 8px 0;
+  line-height: 1;
+}
+
+
