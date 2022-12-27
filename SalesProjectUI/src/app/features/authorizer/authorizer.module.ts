@@ -4,10 +4,12 @@ import { CommonModule } from '@angular/common';
 import { AuthorizerRoutingModule } from './authorizer-routing.module';
 import { AuthorizerComponent } from './authorizer.component';
 import { MaterialModule } from 'src/app/common modules/materials/material.module';
+import { UpdateprofileComponent } from './updateprofile/updateprofile.component';
 
 @NgModule({
   declarations: [
-    AuthorizerComponent
+    AuthorizerComponent,
+    UpdateprofileComponent
   ],
   imports: [
     CommonModule,
