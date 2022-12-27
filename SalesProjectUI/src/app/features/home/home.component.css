@@ -2,10 +2,10 @@
 {
   background-color: #fafafa;
   background-position: left top;
-  background-size:fill;
+  background-size:100%;
   background-repeat: repeat;
   background-attachment: fixed;
-  background-image: url(https://www.viasat.com/content/dam/us-site/government/images/1245270_Space_Domain_Hero_003.jpg);
+  background-image: url("https://github.com/7097474669/V-Pass/blob/main/SalesProjectUI/src/assets/HomePage.png?raw=true");
 }
 
 .banner
