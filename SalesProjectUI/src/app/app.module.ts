@@ -9,6 +9,7 @@ import { FormsModule } from '@angular/forms';
 import { HomeComponent } from './features/home/home.component';
 import { LoginpageComponent } from './features/loginpage/loginpage.component';
 import { MaterialModule } from './common modules/materials/material.module';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { MaterialModule } from './common modules/materials/material.module';
     BrowserAnimationsModule,
     syncfusion,
     FormsModule,
-    MaterialModule
+    MaterialModule,
+    RouterModule
 
   ],
   providers: [],

@@ -2,10 +2,12 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './features/home/home.component';
 import { LoginpageComponent } from './features/loginpage/loginpage.component';
-
+import { UpdateprofileComponent } from './features/authorizer/updateprofile/updateprofile.component';
 const routes: Routes = [
   {
   path:'',component:HomeComponent
+},{
+  path:'update', component:UpdateprofileComponent
 },
 {
   path:'login',component:LoginpageComponent

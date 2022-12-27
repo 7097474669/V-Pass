@@ -20,3 +20,4 @@ CREATE TABLE [dbo].[tbl_DistributorDetails](
 	[SecurityAnswer] [varchar](1000) NULL,
 
 	[IsActive] [bit] NULL,
+);

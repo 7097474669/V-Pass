@@ -3,10 +3,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { AuthorizerComponent } from './authorizer.component';
 import { UpdateprofileComponent } from './updateprofile/updateprofile.component';
 
-const routes: Routes = [{ path: '', component: AuthorizerComponent },
-{
-  path:'update', component:UpdateprofileComponent
-}];
+const routes: Routes = [{ path: '', component: AuthorizerComponent },];
 
 @NgModule({
   imports: [RouterModule.forChild(routes)],

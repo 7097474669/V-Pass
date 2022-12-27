@@ -10,7 +10,8 @@
     <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon">
       <mat-icon>logout</mat-icon>
     </button>
-    <button mat-icon-button class="example-icon" aria-label="Example icon-button with share icon" (click)="update()">
-      <mat-icon>Edit</mat-icon>
-    </button>
   </mat-toolbar>
+  <mat-tab-group mat-stretch-tabs="false" mat-align-tabs="start">
+    <mat-tab label="Update"><button class="btn btn-primary my-4 mx-3" (click)="update()">Update</button></mat-tab>
+    <mat-tab label="List of  Micro Distributor"></mat-tab>
+  </mat-tab-group>
