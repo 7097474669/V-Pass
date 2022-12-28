@@ -1,5 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Schema Namespace="SalesProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Authorizer Profile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" Nullable="false" />
+    <Property Name="MemberID" Type="varchar" MaxLength="1" Nullable="false" />
+    <Property Name="First Name" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Last Name" Type="varchar" MaxLength="50" />
+    <Property Name="Conact Number" Type="varchar" MaxLength="50" Nullable="false" />
+    <Property Name="Address" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
   <EntityType Name="UserProfile">
     <Key>
       <PropertyRef Name="ID" />
@@ -23,6 +34,7 @@
     <Property Name="IsActive" Type="bit" />
   </EntityType>
   <EntityContainer Name="SalesProjectModelStoreContainer">
+    <EntitySet Name="Authorizer Profile" EntityType="Self.Authorizer Profile" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="UserProfile" EntityType="Self.UserProfile" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

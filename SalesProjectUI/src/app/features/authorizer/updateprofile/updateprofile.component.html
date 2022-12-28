@@ -1,4 +1,42 @@
-<!-- <router-outlet></router-outlet> -->
-<!-- <div class="spin">
-<mat-spinner ></mat-spinner>
-</div> -->
+<div class="example-sidenav">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      <mat-icon>menu</mat-icon>
+    </button>
+  </div>
+
+<mat-drawer #drawer class="example-sidenav" mode="side">
+      <button (click)="showFiller = !showFiller" mat-raised-button>Product</button> <br>
+      <button (click)="showFiller = !showFiller" mat-raised-button>Sales</button>
+
+</mat-drawer>
+
+<div class="form">
+    <mat-card>
+    <mat-form-field appearance="outline">
+        <mat-label>ID</mat-label>
+        <input matInput>
+      </mat-form-field><br>
+      <mat-form-field appearance="outline">
+        <mat-label>MemberId</mat-label>
+        <input matInput>
+      </mat-form-field> <br>
+      <mat-form-field appearance="outline">
+        <mat-label>FirstName</mat-label>
+        <input matInput>
+      </mat-form-field><br>
+      <mat-form-field appearance="outline">
+        <mat-label>LastName</mat-label>
+        <input matInput>
+      </mat-form-field><br>
+      <mat-form-field appearance="outline">
+        <mat-label>Conact Number</mat-label>
+        <input matInput>
+      </mat-form-field><br>
+      <mat-form-field appearance="outline">
+        <mat-label>Address</mat-label>
+        <input matInput>
+      </mat-form-field>
+    </mat-card>
+</div>
+  
+  

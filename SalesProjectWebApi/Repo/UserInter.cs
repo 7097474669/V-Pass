@@ -14,5 +14,11 @@ namespace SalesProjectWebApi.Repo
         string Create(Userprofile add);
 
         string Delete(int ID);
+
+        List<AuthorizerProfile> GetAuthorizerProfiles();
+
+        string UpdateAuthorizer(AuthorizerProfile auth);
     }
+
+
 }

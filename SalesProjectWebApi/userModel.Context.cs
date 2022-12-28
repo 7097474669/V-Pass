@@ -26,5 +26,6 @@ namespace SalesProjectWebApi
         }
     
         public DbSet<UserProfile> UserProfiles { get; set; }
+        public DbSet<Authorizer_Profile> Authorizer_Profiles { get; set; }
     }
 }
