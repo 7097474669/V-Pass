@@ -1,18 +1,18 @@
-.background
+body
 {
-  background-color: #fafafa;
-  background-position: left top;
-  background-size:100%;
-  background-repeat: repeat;
-  background-attachment: fixed;
-  background-image: url("https://github.com/7097474669/V-Pass/blob/main/SalesProjectUI/src/assets/HomePage.png?raw=true");
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: Arial;
 }
 
-.banner
+/* .banner
 {
-  color: rgb(255, 255, 255);
-  background-color: #0695e1;
-}
+  background: url("https://github.com/7097474669/V-Pass/blob/main/SalesProjectUI/src/assets/HomePage.png?raw=true") no-repeat center;
+  position: relative;
+  background-size: 100% 100%;
+  padding: 15% 5%;
+} */
 
 .example-spacer
 {
@@ -26,25 +26,66 @@
   font-size: small;
 }
 
-.finewp-foot-wrap p.finewp-copyright
+.tool
 {
-  background-color: #000;
-  float: none;
-  margin: 25%;
+  background-color: #023e8a;
   color: #fff;
-  text-align: center;
-  padding: 10px 0px;
-  line-height: 1;
+}
+
+p
+{
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #023e8a;
+}
+mat-icon
+{
+  padding-top: 5px
+}
+a
+{
+  text-decoration: none;
+}
+
+.btn
+{
+  background-color: #f79307  ;
+  font: bold, white;
+  height: 45px;
+  color: #fff;
+  border: 0px;
+}
+
+.marq p
+{
+  padding: 15px;
+  color: #000;
 }
 
 h2
 {
-  width: 400px;
-  margin: auto;
-  text-align: center;
-  color: #fff;
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  color: #023e8a;
+  margin: 110px 120px 0px 0px;
+  font-weight: bold;
 }
- .col{
-  background-color:cornsilk;
- }
+.outro
+{
+  position: relative;
+}
+.outro img
+{
+  width: 100%;
+}
+.intro
+{
+  position: absolute;
+  top: 30px;
+}
+
+
+
+
+
 

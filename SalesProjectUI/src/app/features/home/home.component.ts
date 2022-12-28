@@ -7,14 +7,20 @@ import { Router } from '@angular/router';
 })
 export class HomeComponent implements OnInit {
 
-  Date1: Date = new Date();
-
   constructor(private route:Router) { }
 
-  ngOnInit(): void {
+  ngOnInit(): void {}
+
+  Date1: Date = new Date();
+
+  SignIn()
+  {
+    this.route.navigate(['login'])
   }
-  onClick(){
-  this.route.navigate(['login'])
+
+  HomeBtn()
+  {
+    this.route.navigate(['']);
   }
 
 }

@@ -11,6 +11,7 @@ import { LoginpageComponent } from './features/loginpage/loginpage.component';
 import { MaterialModule } from './common modules/materials/material.module';
 import { RouterModule } from '@angular/router';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -24,7 +25,8 @@ import { RouterModule } from '@angular/router';
     syncfusion,
     FormsModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+
 
   ],
   providers: [],
