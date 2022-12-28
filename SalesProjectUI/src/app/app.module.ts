@@ -5,11 +5,13 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { syncfusion } from './common modules/syncfusion/SyncFusion.module';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './features/home/home.component';
 import { LoginpageComponent } from './features/loginpage/loginpage.component';
 import { MaterialModule } from './common modules/materials/material.module';
 import { RouterModule } from '@angular/router';
+import { HttpClientModule } from '@angular/common/http';
+
 
 @NgModule({
   declarations: [
@@ -24,7 +26,8 @@ import { RouterModule } from '@angular/router';
     syncfusion,
     FormsModule,
     MaterialModule,
-    RouterModule
+    RouterModule,
+    HttpClientModule,ReactiveFormsModule
 
   ],
   providers: [],

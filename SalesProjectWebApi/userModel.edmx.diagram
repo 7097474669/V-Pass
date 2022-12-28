@@ -6,6 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="dbc0cfdb6a38408b9421a9c477c16e8e" Name="Diagram1">
         <EntityTypeShape EntityType="SalesProjectModel.UserProfile" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="SalesProjectModel.Authorizer_Profile" Width="1.5" PointX="4.875" PointY="1.375" IsExpanded="true" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

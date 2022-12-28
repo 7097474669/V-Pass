@@ -24,5 +24,17 @@
   </EntityType>
   <EntityContainer Name="SalesProjectEntities" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="UserProfiles" EntityType="Self.UserProfile" />
+    <EntitySet Name="Authorizer_Profiles" EntityType="SalesProjectModel.Authorizer_Profile" />
   </EntityContainer>
+  <EntityType Name="Authorizer_Profile">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" />
+    <Property Name="MemberID" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
+    <Property Name="First_Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Last_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Conact_Number" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Address" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
+  </EntityType>
 </Schema>

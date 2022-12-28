@@ -24,5 +24,17 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="Authorizer_Profiles">
+      <EntityTypeMapping TypeName="SalesProjectModel.Authorizer_Profile">
+        <MappingFragment StoreEntitySet="Authorizer Profile">
+          <ScalarProperty Name="Address" ColumnName="Address" />
+          <ScalarProperty Name="Conact_Number" ColumnName="Conact Number" />
+          <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
+          <ScalarProperty Name="First_Name" ColumnName="First Name" />
+          <ScalarProperty Name="MemberID" ColumnName="MemberID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
   </EntityContainerMapping>
 </Mapping>

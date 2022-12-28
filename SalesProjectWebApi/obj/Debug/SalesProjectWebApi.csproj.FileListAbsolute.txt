@@ -79,3 +79,6 @@ D:\GitHub_Workspace\V-Pass\SalesProjectWebApi\obj\Debug\SalesProjectWebApi.cspro
 D:\GitHub_Workspace\V-Pass\SalesProjectWebApi\obj\Debug\SalesProjectWebApi.csproj.CopyComplete
 D:\GitHub_Workspace\V-Pass\SalesProjectWebApi\obj\Debug\SalesProjectWebApi.dll
 D:\GitHub_Workspace\V-Pass\SalesProjectWebApi\obj\Debug\SalesProjectWebApi.pdb
+D:\GitHub_Workspace\V-Pass\SalesProjectWebApi\bin\System.Web.Cors.dll
+D:\GitHub_Workspace\V-Pass\SalesProjectWebApi\bin\System.Web.Http.Cors.dll
+D:\GitHub_Workspace\V-Pass\SalesProjectWebApi\bin\System.Web.Http.Cors.xml

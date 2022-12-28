@@ -5,7 +5,7 @@
   background-size:100%;
   background-repeat: repeat;
   background-attachment: fixed;
-  background-image: url("https://github.com/7097474669/V-Pass/blob/main/SalesProjectUI/src/assets/HomePage.png?raw=true");
+  background-image:url(/assets/HomePage.png);
 }
 
 .banner

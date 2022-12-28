@@ -6,7 +6,7 @@ using System.Web;
 
 namespace SalesProjectWebApi.Repo
 {
-    public class UserClass:UserInter
+    public class UserClass : UserInter
     {
         SalesProjectEntities sale = new SalesProjectEntities();
 
@@ -16,8 +16,8 @@ namespace SalesProjectWebApi.Repo
         }
 
         List<Userprofile> UserInter.GetUserProfiles()
-        { 
-            var list =sale.UserProfiles.Select(s => new Userprofile()
+        {
+            var list = sale.UserProfiles.Select(s => new Userprofile()
             {
                 ID = s.ID,
                 MemberID = s.MemberID,
@@ -41,10 +41,10 @@ namespace SalesProjectWebApi.Repo
             return list;
         }
 
-        string  UserInter.Create(Userprofile add)
+        string UserInter.Create(Userprofile add)
         {
             var salelist = sale.UserProfiles.Where(s => s.ID == add.ID).FirstOrDefault();
-            if(salelist == null)
+            if (salelist == null)
             {
                 sale.UserProfiles.Add(new UserProfile()
                 {
@@ -66,12 +66,12 @@ namespace SalesProjectWebApi.Repo
                     SecurityAnswer = add.SecurityAnswer,
                     IsActive = add.IsActive
 
-               });
+                });
                 sale.SaveChanges();
                 sale.Dispose();
                 return "Added";
             }
-            else{
+            else {
                 salelist.ID = add.ID;
                 salelist.MemberID = add.MemberID;
                 salelist.FirstName = add.FirstName;
@@ -99,7 +99,7 @@ namespace SalesProjectWebApi.Repo
         string UserInter.Delete(int ID)
         {
             var salelist = sale.UserProfiles.Where(e => e.ID == ID).FirstOrDefault();
-            if(salelist != null)
+            if (salelist != null)
             {
                 sale.UserProfiles.Remove(salelist);
             };
@@ -108,7 +108,55 @@ namespace SalesProjectWebApi.Repo
             return "Deleted";
         }
 
+        List<AuthorizerProfile> UserInter.GetAuthorizerProfiles()
+        {
+            var salelist = sale.Authorizer_Profiles.Select(e => new AuthorizerProfile()
+            {
+                ID = e.ID,
+                MemberID = e.MemberID,
+                First_Name = e.First_Name,
+                Last_Name = e.Last_Name,
+                Conact_Number = e.Conact_Number,
+                Address = e.Address
+            }).ToList<AuthorizerProfile>();
+            sale.Dispose();
+            return salelist;
+        }
 
+        string UserInter.UpdateAuthorizer(AuthorizerProfile auth)
+        {
+            var salelist = sale.Authorizer_Profiles.Where(e => e.ID == auth.ID).FirstOrDefault();
+            if(salelist == null)
+            {
+                sale.Authorizer_Profiles.Add(new Authorizer_Profile()
+                {
+
+                    ID = auth.ID,
+                    MemberID = auth.MemberID,
+                    First_Name = auth.First_Name,
+                    Last_Name = auth.Last_Name,
+                    Conact_Number = auth.Conact_Number,
+                    Address = auth.Address
+                });
+                sale.SaveChanges();
+                sale.Dispose();
+                return "Added";
+            }
+            else
+            {
+                salelist.ID = auth.ID;
+                salelist.MemberID = auth.MemberID;
+                salelist.First_Name = auth.First_Name;
+                salelist.Last_Name = auth.Last_Name;
+                salelist.Conact_Number = auth.Conact_Number;
+                salelist.Address = auth.Address;
+
+
+                sale.SaveChanges();
+                sale.Dispose();
+                return "updated";
+            }
+        }
 
     }
 }
