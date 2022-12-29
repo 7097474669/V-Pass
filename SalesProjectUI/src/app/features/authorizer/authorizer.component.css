@@ -1,4 +1,12 @@
 .example-spacer {
     flex: 1 1 auto;
   }
+  table {
+    border-collapse: separate;
+    border-spacing: 74px 0;
+  }
+  
+  td {
+    padding: 10px 0;  
+  }  
   
