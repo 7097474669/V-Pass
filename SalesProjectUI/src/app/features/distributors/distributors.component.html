@@ -1,0 +1,21 @@
+
+<h1>Distributor</h1>
+<div class="profile">
+    <button mat-button [matMenuTriggerFor]="menu" class="profileBtn" (click)="profile()">
+        <mat-icon>account_circle</mat-icon>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item (click)="SignUP()">SignUp</button>
+            <button mat-menu-item (click)="SignIn()">SignIn</button>
+        </mat-menu>
+    </button>
+</div>
+<a routerLink="profile">SignUp</a>
+<br>
+<div>
+<mat-tab-group animationDuration="1000ms">
+    <mat-tab label="Products">Products content</mat-tab>
+    <mat-tab  label="Products Sale"> Products Sales content
+    </mat-tab>
+    <mat-tab label="Stock">Stock</mat-tab>
+</mat-tab-group>
+</div>

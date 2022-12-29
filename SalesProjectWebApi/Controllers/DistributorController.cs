@@ -10,21 +10,25 @@ using System.Web.Http.Cors;
 
 namespace SalesProjectWebApi.Controllers
 {
+<<<<<<< Updated upstream:SalesProjectWebApi/Controllers/UserProController.cs
     [EnableCors(origins: "*", headers: "*", methods: "*")]
 
     public class UserProController : ApiController
+=======
+    public class DistributorController : ApiController
+>>>>>>> Stashed changes:SalesProjectWebApi/Controllers/DistributorController.cs
     {
-        public readonly UserInter user;
-        public UserProController()
+        public readonly Distributor Dist;
+        public DistributorController()
         {
 
         }
-        public UserProController(UserInter user)
+        public DistributorController(Distributor user)
         {
-            this.user = user;
+            this.Dist = user;
 
         }
-        [Route("api/SalesProject/GetUserProfiles")]
+        [Route("api/SalesProject/GetDistributor")]
         [HttpGet]
         public IHttpActionResult GetUserProfiles()
         {
@@ -39,7 +43,7 @@ namespace SalesProjectWebApi.Controllers
 
         [Route("api/SalesProject/Create")]
         [HttpPost]
-         public IHttpActionResult Create(Userprofile add)
+         public IHttpActionResult Create(DistributorModel add)
         {
             var sal = user.Create(add);
             if (sal == null)

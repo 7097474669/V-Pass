@@ -13,10 +13,10 @@ namespace SalesProjectWebApi
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class SalesProjectEntities : DbContext
+    public partial class DistributorEntities : DbContext
     {
-        public SalesProjectEntities()
-            : base("name=SalesProjectEntities")
+        public DistributorEntities()
+            : base("name=DistributorEntities")
         {
         }
     
@@ -25,7 +25,11 @@ namespace SalesProjectWebApi
             throw new UnintentionalCodeFirstException();
         }
     
+<<<<<<< Updated upstream:SalesProjectWebApi/userModel.Context.cs
         public DbSet<UserProfile> UserProfiles { get; set; }
         public DbSet<Authorizer_Profile> Authorizer_Profiles { get; set; }
+=======
+        public DbSet<tbl_DistributorLoginDetails> tbl_DistributorLoginDetails { get; set; }
+>>>>>>> Stashed changes:SalesProjectWebApi/DistributorsDB.Context.cs
     }
 }

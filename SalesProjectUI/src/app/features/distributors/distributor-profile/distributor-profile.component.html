@@ -1,0 +1,147 @@
+
+<mat-dialog-actions align="end">
+    <button mat-button mat-dialog-close> X </button>
+</mat-dialog-actions>
+
+<div class="container">
+    <h2 mat-dialog-title align="center">Registration Form</h2> <br>
+
+    
+
+<mat-stepper [linear]="isLinear" #stepper>
+    <mat-step [stepControl]="Form1" label="Personal Details">
+    <form [formGroup]="Form1" >
+        <div class="names">
+            <mat-form-field>
+                <mat-label>First Name:</mat-label>
+                <input matInput type="text" placeholder="First Name"  formControlName="FirstName"> 
+            </mat-form-field>  |
+            <mat-form-field >
+                <mat-label>Middle Name:</mat-label>
+                <input matInput type="text" placeholder="Middle Name"  formControlName="MiddleName">
+            </mat-form-field > |
+            <mat-form-field > 
+                <mat-label>Last Name:</mat-label>
+                <input matInput type="text" placeholder="Last Name"  formControlName="LastName"> 
+            </mat-form-field >
+        </div>
+        <div class="ContactDetails">
+            <mat-form-field > 
+                <mat-label>Email:</mat-label>
+                <input matInput type="email" placeholder="Ex: jhon@gmail.com"  formControlName="Email">
+            </mat-form-field > | 
+            <mat-form-field > 
+                <mat-label>phone No:</mat-label>
+                <input matInput type="tel" placeholder="Ex: +91 12345 09876" formControlName="PhoneNo">
+            </mat-form-field > 
+            <br>
+            <mat-form-field > 
+                <mat-label>Firm Name/Compnay Name:</mat-label>
+                <input matInput type="text" placeholder="Ex: Coign pvt.Ltd"  formControlName="FirmName">
+            </mat-form-field > 
+            <br>
+            <mat-form-field>
+                <mat-label>Address:</mat-label>
+                <textarea matInput placeholder="Ex: Enter Address.." formControlName="Address"></textarea>
+            </mat-form-field>
+            <br>
+        </div>
+
+        <mat-dialog-actions align="end">
+            <button mat-button matStepperNext>Next</button>
+            <button mat-button matStepperPrevious>Back</button>
+        </mat-dialog-actions>
+    
+    </form>
+    </mat-step>
+
+    <mat-step [stepControl]="Form2" label="BankDetails">
+        <form [formGroup]="Form2">
+
+        <div class="bankDetails">
+            <mat-label > TIN (Taxpayer Identification Number):  </mat-label>
+            <mat-form-field>
+                <mat-label for="TINno">TIN (Taxpayer Identification Number): </mat-label>
+                <input matInput type="text" placeholder="1234 XXXX XXXX 6789" formControlName="TINNo">
+            </mat-form-field> 
+            <br>
+            <mat-label > PAN No:  </mat-label>
+            <mat-form-field>
+                <mat-label for="panNo">PAN No: </mat-label>
+                <input matInput type="text" placeholder="ABCX XXXX D " formControlName="PANNo">
+            </mat-form-field>
+                <br>
+            <mat-label > Bank IFSC Code: </mat-label>
+            <mat-form-field>
+                <mat-label for="Ifsc">Bank IFSC Code:</mat-label>
+                <input matInput type="text" placeholder="Ex:- SBI012345678 " formControlName="IFSC">
+            </mat-form-field> 
+            <br>
+            <mat-label > Bank Account No: </mat-label>
+
+            <mat-form-field>
+                <mat-label for="BankAcNo">Bank Account No:</mat-label>
+              <input matInput type="text" placeholder="Ex:- 1234 1234 1234 1234 "  formControlName="BankAcNo">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-dialog-actions align="end">
+                <button mat-button matStepperNext>Next</button> 
+                <button mat-button matStepperPrevious>Back</button>
+            </mat-dialog-actions>
+          </div>
+      
+    </form>
+</mat-step>
+<mat-step [stepControl]="Form3" label="Login Details">
+    <form [formGroup]="Form3">
+        <div>
+            <mat-form-field>
+                <mat-icon matPrefix>account_circle</mat-icon>
+                <mat-label for="UserName">
+                Username:</mat-label>
+              <input matInput type="text" placeholder="Ex: Epson@123"  formControlName="UserName">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-icon matPrefix>visibility_off</mat-icon>
+                <mat-label for="Password">Password:</mat-label>
+              <input matInput type="password" placeholder="Ex: Password#321"  formControlName="Password">
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-icon matPrefix>visibility</mat-icon>
+                <mat-label >Confirm Password:</mat-label>
+              <input matInput type="text"   formControlName="Password">
+            </mat-form-field>
+        </div>
+        <div>
+                <mat-form-field>
+                    <mat-icon matPrefix> vpn_key</mat-icon>
+                <mat-label >Security Question ?</mat-label>
+                <mat-select formControlName="SecurityQuestion">
+                    <mat-option value="what is your favourite Bike ?">what is your favourite Bike ?</mat-option>
+                    <mat-option value="what is your father Name  ?">what is your father Name  ?</mat-option>
+                    <mat-option value="who is your favourite person ?">who is your favourite person ?</mat-option>
+                    <mat-option value="what is your favourite flower ?">what is your favourite flower ?</mat-option>
+                    <mat-option value="what is your favourite Colour ?">what is your favourite Colour ?</mat-option>
+                </mat-select>
+            </mat-form-field>
+        </div>
+        <div>
+            <mat-form-field>
+                <mat-label >Security Answer :</mat-label>
+              <input matInput type="text" placeholder="Ex:"  formControlName="SecurityAns">
+            </mat-form-field>
+        </div>
+        
+        <div class="btns"> 
+            <button mat-raised-button (click)="Registration()"> Submit </button> | 
+            <button mat-raised-button type="reset"> Reset </button>
+        </div>
+    </form>
+</mat-step>
+</mat-stepper>
+</div>

@@ -4,9 +4,14 @@
   <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
+<<<<<<< Updated upstream:SalesProjectWebApi/userModel.edmx.diagram
       <Diagram DiagramId="dbc0cfdb6a38408b9421a9c477c16e8e" Name="Diagram1">
         <EntityTypeShape EntityType="SalesProjectModel.UserProfile" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
         <EntityTypeShape EntityType="SalesProjectModel.Authorizer_Profile" Width="1.5" PointX="4.875" PointY="1.375" IsExpanded="true" />
+=======
+      <Diagram DiagramId="f05909910cf74b76afc9e9bf2fc13900" Name="Diagram1" ZoomLevel="84">
+        <EntityTypeShape EntityType="ProjectModel.tbl_DistributorLoginDetails" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+>>>>>>> Stashed changes:SalesProjectWebApi/DistributorsDB.edmx.diagram
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

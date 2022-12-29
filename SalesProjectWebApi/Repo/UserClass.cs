@@ -6,7 +6,23 @@ using System.Web;
 
 namespace SalesProjectWebApi.Repo
 {
+<<<<<<< Updated upstream
     public class UserClass : UserInter
+=======
+
+    public interface UserInter
+    {
+        List<DistributorModel> GetUserProfiles();
+
+        string Create(DistributorModel add);
+
+        string Delete(int ID);
+    }
+
+
+
+    public class UserClass:UserInter
+>>>>>>> Stashed changes
     {
         SalesProjectEntities sale = new SalesProjectEntities();
 
@@ -15,9 +31,15 @@ namespace SalesProjectWebApi.Repo
             throw new NotImplementedException();
         }
 
+<<<<<<< Updated upstream
         List<Userprofile> UserInter.GetUserProfiles()
         {
             var list = sale.UserProfiles.Select(s => new Userprofile()
+=======
+        List<DistributorModel> UserInter.GetUserProfiles()
+        { 
+            var list =sale.UserProfiles.Select(s => new DistributorModel()
+>>>>>>> Stashed changes
             {
                 ID = s.ID,
                 MemberID = s.MemberID,
@@ -36,12 +58,16 @@ namespace SalesProjectWebApi.Repo
                 SecurityQuestion = s.SecurityQuestion,
                 SecurityAnswer = s.SecurityAnswer,
                 IsActive = s.IsActive
-            }).ToList<Userprofile>();
+            }).ToList<DistributorModel>();
             sale.Dispose();
             return list;
         }
 
+<<<<<<< Updated upstream
         string UserInter.Create(Userprofile add)
+=======
+        string  UserInter.Create(DistributorModel add)
+>>>>>>> Stashed changes
         {
             var salelist = sale.UserProfiles.Where(s => s.ID == add.ID).FirstOrDefault();
             if (salelist == null)
