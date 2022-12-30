@@ -4,24 +4,8 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-<<<<<<< Updated upstream:SalesProjectWebApi/userModel.edmx
-    <Schema Namespace="SalesProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
-        <EntityType Name="Authorizer Profile">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="int" Nullable="false" />
-          <Property Name="MemberID" Type="varchar" MaxLength="1" Nullable="false" />
-          <Property Name="First Name" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Last Name" Type="varchar" MaxLength="50" />
-          <Property Name="Conact Number" Type="varchar" MaxLength="50" Nullable="false" />
-          <Property Name="Address" Type="varchar" MaxLength="100" Nullable="false" />
-        </EntityType>
-        <EntityType Name="UserProfile">
-=======
-      <Schema Namespace="ProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="SalesProjectModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="tbl_DistributorLoginDetails">
->>>>>>> Stashed changes:SalesProjectWebApi/DistributorsDB.edmx
           <Key>
             <PropertyRef Name="ID" />
           </Key>
@@ -44,19 +28,14 @@
           <Property Name="SecurityAnswer" Type="varchar" MaxLength="1000" />
           <Property Name="isActive" Type="bit" />
         </EntityType>
-<<<<<<< Updated upstream:SalesProjectWebApi/userModel.edmx
         <EntityContainer Name="SalesProjectModelStoreContainer">
-          <EntitySet Name="Authorizer Profile" EntityType="Self.Authorizer Profile" Schema="dbo" store:Type="Tables" />
-          <EntitySet Name="UserProfile" EntityType="Self.UserProfile" Schema="dbo" store:Type="Tables" />
-=======
-        <EntityContainer Name="ProjectModelStoreContainer">
           <EntitySet Name="tbl_DistributorLoginDetails" EntityType="Self.tbl_DistributorLoginDetails" Schema="dbo" store:Type="Tables" />
->>>>>>> Stashed changes:SalesProjectWebApi/DistributorsDB.edmx
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
-      <Schema Namespace="ProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+      <Schema Namespace="SalesProjectModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
         <EntityType Name="tbl_DistributorLoginDetails">
           <Key>
             <PropertyRef Name="ID" />
@@ -80,34 +59,17 @@
           <Property Name="SecurityAnswer" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
           <Property Name="isActive" Type="Boolean" />
         </EntityType>
-<<<<<<< Updated upstream:SalesProjectWebApi/userModel.edmx
-        <EntityContainer Name="SalesProjectEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="UserProfiles" EntityType="Self.UserProfile" />
-          <EntitySet Name="Authorizer_Profiles" EntityType="SalesProjectModel.Authorizer_Profile" />
-=======
-        <EntityContainer Name="DistributorEntities" annotation:LazyLoadingEnabled="true">
+        <EntityContainer Name="SalesProjectEntities1" annotation:LazyLoadingEnabled="true">
           <EntitySet Name="tbl_DistributorLoginDetails" EntityType="Self.tbl_DistributorLoginDetails" />
->>>>>>> Stashed changes:SalesProjectWebApi/DistributorsDB.edmx
         </EntityContainer>
-        <EntityType Name="Authorizer_Profile">
-          <Key>
-            <PropertyRef Name="ID" />
-          </Key>
-          <Property Name="ID" Type="Int32" Nullable="false" />
-          <Property Name="MemberID" Type="String" Nullable="false" MaxLength="1" FixedLength="false" Unicode="false" />
-          <Property Name="First_Name" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Last_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Conact_Number" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-          <Property Name="Address" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="false" />
-        </EntityType>
       </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
       <Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
-        <EntityContainerMapping StorageEntityContainer="ProjectModelStoreContainer" CdmEntityContainer="DistributorEntities">
+        <EntityContainerMapping StorageEntityContainer="SalesProjectModelStoreContainer" CdmEntityContainer="SalesProjectEntities1">
           <EntitySetMapping Name="tbl_DistributorLoginDetails">
-            <EntityTypeMapping TypeName="ProjectModel.tbl_DistributorLoginDetails">
+            <EntityTypeMapping TypeName="SalesProjectModel.tbl_DistributorLoginDetails">
               <MappingFragment StoreEntitySet="tbl_DistributorLoginDetails">
                 <ScalarProperty Name="ID" ColumnName="ID" />
                 <ScalarProperty Name="MemberID" ColumnName="MemberID" />
@@ -127,18 +89,6 @@
                 <ScalarProperty Name="SecurityQuestion" ColumnName="SecurityQuestion" />
                 <ScalarProperty Name="SecurityAnswer" ColumnName="SecurityAnswer" />
                 <ScalarProperty Name="isActive" ColumnName="isActive" />
-              </MappingFragment>
-            </EntityTypeMapping>
-          </EntitySetMapping>
-          <EntitySetMapping Name="Authorizer_Profiles">
-            <EntityTypeMapping TypeName="SalesProjectModel.Authorizer_Profile">
-              <MappingFragment StoreEntitySet="Authorizer Profile">
-                <ScalarProperty Name="Address" ColumnName="Address" />
-                <ScalarProperty Name="Conact_Number" ColumnName="Conact Number" />
-                <ScalarProperty Name="Last_Name" ColumnName="Last Name" />
-                <ScalarProperty Name="First_Name" ColumnName="First Name" />
-                <ScalarProperty Name="MemberID" ColumnName="MemberID" />
-                <ScalarProperty Name="ID" ColumnName="ID" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
