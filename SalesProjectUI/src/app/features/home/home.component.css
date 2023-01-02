@@ -6,14 +6,6 @@ body
   font-family: Arial;
 }
 
-/* .banner
-{
-  background: url("https://github.com/7097474669/V-Pass/blob/main/SalesProjectUI/src/assets/HomePage.png?raw=true") no-repeat center;
-  position: relative;
-  background-size: 100% 100%;
-  padding: 15% 5%;
-} */
-
 .example-spacer
 {
   text-decoration: none;
@@ -38,12 +30,15 @@ p
   font-size: 20px;
   color: #023e8a;
 }
+
 mat-icon
 {
   padding-top: 5px
 }
 a
 {
+  font: normal, white;
+  font-size: medium;
   text-decoration: none;
 }
 
