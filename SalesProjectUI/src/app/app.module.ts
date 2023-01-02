@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { NgModule, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -11,6 +11,8 @@ import { LoginpageComponent } from './features/loginpage/loginpage.component';
 import { MaterialModule } from './common modules/materials/material.module';
 import { RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
+import { MatInputModule } from '@angular/material/input';
+import { WareHouseComponent } from './features/ware-house/ware-house.component';
 
 
 
@@ -18,17 +20,19 @@ import { HttpClientModule } from '@angular/common/http';
   declarations: [
     AppComponent,
     HomeComponent,
-    LoginpageComponent
+    LoginpageComponent,
+    WareHouseComponent
   ],
+  //schemas: [ CUSTOM_ELEMENTS_SCHEMA],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule,ReactiveFormsModule,
     syncfusion,
     FormsModule,
     MaterialModule,
     RouterModule,
+    MatInputModule,
     HttpClientModule,ReactiveFormsModule
 
   ],

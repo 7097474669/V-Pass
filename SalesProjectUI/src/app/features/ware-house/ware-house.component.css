@@ -1,0 +1,86 @@
+body
+{
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font-family: Arial;
+}
+
+.example-spacer
+{
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  flex: 1 1 auto;
+}
+
+.date
+{
+  font-size: small;
+}
+
+.tool
+{
+  background-color: #023e8a;
+  color: #fff;
+}
+
+p
+{
+  font-family: "Oswald", sans-serif;
+  font-size: 20px;
+  color: #023e8a;
+}
+
+mat-icon
+{
+  padding-top: 5px
+}
+a
+{
+  font: normal, white;
+  font-size: medium;
+  text-decoration: none;
+}
+
+.btn
+{
+  background-color: #f79307  ;
+  font: bold, white;
+  height: 45px;
+  color: #fff;
+  border: 0px;
+}
+
+.marq p
+{
+  padding: 15px;
+  color: #000;
+}
+
+h2
+{
+  font-family: "Oswald", sans-serif;
+  font-size: 70px;
+  color: #023e8a;
+  margin: 110px 120px 0px 0px;
+  font-weight: bold;
+}
+.outro
+{
+  position: relative;
+}
+.outro img
+{
+  width: 100%;
+}
+.intro
+{
+  position: absolute;
+  top: 30px;
+}
+
+
+
+
+
+
