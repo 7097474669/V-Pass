@@ -1,26 +1,23 @@
-<p>ware-house works!</p>
-<div class="nav">
-  <mat-toolbar color="primary" class="mat-elevation-z4">
-    <mat-toolbar-row>
-      <div class="d-flex">
-        <mat-icon>shopping_cart</mat-icon>&nbsp;
-        <h1>VPASS</h1>
-      </div>
-      <span class="example-spacer"></span>
+<div class="container-fluid">
+  <div class="nav">
+    <mat-toolbar color="primary" class="mat-elevation-z4">
+      <mat-toolbar-row>
+        <div class="d-flex">
+          <a id="vpasslogo" (click)="HomeBtn()"><mat-icon>group_work</mat-icon>&nbsp;<span>VPASS Warehouse</span></a>
 
+        </div>
+      <span class="example-spacer"></span>
+      <div>
+        <button type="button" mat-button mat-button (click)="HomeBtn()"><mat-icon>home</mat-icon></button>
+        <span class="example-spacer"></span>
+        <button type="button" mat-button (click)="SignIn()"><mat-icon>account_box</mat-icon></button>
+        <button  type="button" mat-button (click)="logout()"><mat-icon>logout</mat-icon></button>
+      </div>
     </mat-toolbar-row>
     <mat-toolbar-row>
-      <button type="button" mat-button mat-button (click)="HomeBtn()">Home</button>
-      <button type="button" mat-button >About Us</button>
-      <button type="button" mat-button >Men</button>
-      <button type="button" mat-button >Women</button>
-      <button type="button" mat-button >Kids</button>
-      <a routerLink="Authorizer" class="example-spacer">Authorizer</a>
-      <a routerLink="Distributors" class="example-spacer">Distributors</a>
-      <a routerLink="wareHouse" class="example-spacer">Warehouse</a>
-      <a routerLink="Admin" class="example-spacer">Admin</a>
-      <span class="example-spacer"></span>
-      <button class="btn" type="button" mat-button (click)="SignIn()">Sign In</button>
-     </mat-toolbar-row>
+      <button  type="button" mat-button routerLink="stock">Stock List</button>
+    </mat-toolbar-row>
   </mat-toolbar>
+
 </div>
+

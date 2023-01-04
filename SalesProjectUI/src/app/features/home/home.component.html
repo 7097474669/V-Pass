@@ -15,10 +15,6 @@
         <button type="button" mat-button >Men</button>
         <button type="button" mat-button >Women</button>
         <button type="button" mat-button >Kids</button>
-        <a routerLink="Authorizer" class="example-spacer">Authorizer</a>
-        <a routerLink="Distributors" class="example-spacer">Distributors</a>
-        <a routerLink="wareHouse" class="example-spacer">Warehouse</a>
-        <a routerLink="Admin" class="example-spacer">Admin</a>
         <span class="example-spacer"></span>
         <button class="btn" type="button" mat-button (click)="SignIn()">Sign In</button>
        </mat-toolbar-row>
@@ -27,14 +23,14 @@
 
   <div class="marq">
     <marquee behavior="scroll" onmouseover="stop()" onmouseout="start()" scrollAmount="10" direction="left">
-      <p>
+      <span>
         Avail Flat ₹200 OFF + FREE SHIPPING.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         40% off on All New Collections. &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         Get upto 30% Off on 2990 and Above, Max Discount Rs. 2500.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         Get upto Rs 1500 Mobikwik Cashback (assured cashback of Rs 200), on a minimum transaction value of Rs 5999 using Mobikwik.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         Get 10% Instant Discount of up to Rs 1000 on a minimum transaction value of Rs 3500 using IDFC Credit Card.&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         Earn up to 5% VPASS Points (up to 150) and pay up to 3% using VPASS Points (up to 150) on orders for 1999 or above.
-      </p>
+      </span>
     </marquee>
   </div>
   <div class="outro">
@@ -50,7 +46,57 @@
        available. <br><br>
       </p>
       <button class="btn" type="button" (click)="SignIn()">Let's Explore >></button>
-
     </div>
   </div>
-</div>
+  <div>
+   <!-- footer -->
+    <footer class="site-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12 col-md-6">
+            <h6>About</h6>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Categories</h6>
+            <ul class="footer-links">
+              <li><a routerLink="Authorizer" class="example-spacer">Authorizer</a></li>
+              <li><a routerLink="Distributors" class="example-spacer">Distributors</a></li>
+              <li><a routerLink="wareHouse" class="example-spacer">Warehouse</a></li>
+              <li><a routerLink="Admin" class="example-spacer">Admin</a></li>
+            </ul>
+          </div>
+
+          <div class="col-xs-6 col-md-3">
+            <h6>Quick Links</h6>
+            <ul class="footer-links">
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact Us</a></li>
+              <li><a href="#">Contribute</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr>
+      </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-sm-6 col-xs-12">
+            <p class="copyright-text">Copyright &copy; 2017 All Rights Reserved by
+         <a href="#">VPASS</a>.
+            </p>
+          </div>
+
+          <div class="col-md-4 col-sm-6 col-xs-12">
+            <ul class="social-icons">
+              <li><a class="facebook" aria-label="" href="#"><i class="fa fa-facebook"></i></a></li>
+              <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+              <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+              <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+</footer>
+  </div>
+  </div>

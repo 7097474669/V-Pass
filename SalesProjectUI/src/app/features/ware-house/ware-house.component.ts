@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 )
 export class WareHouseComponent implements OnInit {
 
+
   constructor(private route:Router) { }
 
   ngOnInit(): void { }
@@ -23,5 +24,14 @@ export class WareHouseComponent implements OnInit {
     this.route.navigate(['/']);
   }
 
+  logout()
+  {
+    this.route.navigate(['']);
+  }
+
+  // Stock()
+  // {
+  //   this.route.navigate(['stock']);
+  // }
 
 }

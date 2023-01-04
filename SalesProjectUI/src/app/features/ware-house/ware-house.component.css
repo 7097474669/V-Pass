@@ -35,6 +35,7 @@ mat-icon
 {
   padding-top: 5px
 }
+
 a
 {
   font: normal, white;
@@ -46,7 +47,7 @@ a
 {
   background-color: #f79307  ;
   font: bold, white;
-  height: 45px;
+  height: 0 auto;
   color: #fff;
   border: 0px;
 }
@@ -60,27 +61,20 @@ a
 h2
 {
   font-family: "Oswald", sans-serif;
-  font-size: 70px;
+  font-size: 50px;
   color: #023e8a;
   margin: 110px 120px 0px 0px;
   font-weight: bold;
 }
-.outro
-{
-  position: relative;
-}
-.outro img
-{
-  width: 100%;
-}
-.intro
-{
-  position: absolute;
-  top: 30px;
+
+.button-container ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-around;
 }
 
-
-
-
-
+.matTabs
+{
+  padding-left: 25%;
+}
 
